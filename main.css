@@ -1,0 +1,116 @@
+@font-face {
+    font-family: OverpassWeight;
+    src: url(fonts/Overpass/Overpass-VariableFont_wght.ttf);
+}
+
+html, body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.main {
+    width: 450px;
+    height: 450px;
+    background-image: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(219, 22%, 13%));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 390px;
+    height: 390px;
+    align-items: flex-start;
+    display: flex; 
+    flex-direction: column;
+}
+
+.circle_with_star {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background-color:  hsla(217, 12%, 63%, 0.1);
+    align-items: center;
+}
+
+.title {
+    font-weight: 500;
+    font-family: OverpassWeight;
+    color: white;
+    transform: translateY(20px);
+}
+
+.description {
+    font-family: OverpassWeight;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: hsla(0, 100%, 100%, 0.4);
+}
+
+.rate {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    transform: translateY(20px);
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.rate button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:  hsla(217, 12%, 63%, 0.1);
+    border: none;
+    font-family: OverpassWeight;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    color: hsla(0, 100%, 100%, 0.4);
+}
+
+.rate button:hover {
+    background-color: white;
+    color: black;
+}
+
+.rate button.active {
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+}
+
+.submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+    font-family: OverpassWeight;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+    transform: translateY(60px);
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit:hover {
+    background-color: white;
+}
