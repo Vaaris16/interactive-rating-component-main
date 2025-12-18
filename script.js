@@ -18,7 +18,7 @@ buttons.forEach(button => {
     button.addEventListener("click", () => {
 
         // remove active from all buttons
-        buttons.forEach(btn => btn.lassList.remove("active"));
+        buttons.forEach(btn => btn.classList.remove("active"));
 
         // add active only to clicked button
         button.classList.add("active");
